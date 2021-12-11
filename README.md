@@ -142,4 +142,24 @@ const throwError = (message: string): void => {
 };
 ```
 
+### 29. Destructuring with Annotations
+
+```js
+const logWeather = (forecast: { date: Date, weather: string }): void => {
+  console.log(forecast.date);
+  console.log(forecast.weather);
+};
+⬇️⬇️⬇️
+const logWeather = ({
+  date,
+  weather,
+}: {
+  date: Date;
+  weather: string;
+}): void => {
+  console.log(date);
+  console.log(weather);
+};
+```
+
 </details>
