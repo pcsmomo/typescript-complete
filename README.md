@@ -128,4 +128,18 @@ const add = (a: number, b: number) => {
 - Arguments: No type inference for arguments!
 - Return type: Type inference works out output, **but we won't use it!**
 
+### 28. Void and Never
+
+```js
+const throwErrorNever = (message: string): never => {
+  throw new Error(message);
+};
+
+const throwError = (message: string): void => {
+  if (!message) {
+    throw new Error(message);
+  }
+};
+```
+
 </details>
