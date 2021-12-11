@@ -86,4 +86,21 @@ mkdir features
 - Type annotations: We(developers tell Typescript the type)
 - Type inference: Typescript guesses the type
 
+### 20. Understanding Inference
+
+```js
+let apples: number = 5;
+let apples = 5;
+```
+
+if declaration and initialization are on the same line, \
+Typescript will figure out the type of 'color' for us
+
+- When to use what?
+  - Type inference: Always!!!
+  - Type annotations
+    1. When we declare a variable on one line then initialize it later
+    2. When we want a variable to have a type that can't be inferred
+    3. When a function returns the 'any' type and we need to clarify the value
+
 </details>
