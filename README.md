@@ -79,4 +79,11 @@ Why do we care about types?
 mkdir features
 ```
 
+## Section 3. Type Annotations in Action
+
+### 16. Type Annotations and Inference
+
+- Type annotations: We(developers tell Typescript the type)
+- Type inference: Typescript guesses the type
+
 </details>
