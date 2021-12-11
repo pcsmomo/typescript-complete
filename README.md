@@ -99,8 +99,8 @@ Typescript will figure out the type of 'color' for us
 - When to use what?
   - Type inference: Always!!!
   - Type annotations
-    1. When we declare a variable on one line then initialize it later
-    2. When we want a variable to have a type that can't be inferred
-    3. When a function returns the 'any' type and we need to clarify the value
+    1. When a function returns the 'any' type and we need to clarify the value
+    2. When we declare a variable on one line then initialize it later
+    3. When we want a variable to have a type that can't be inferred
 
 </details>
