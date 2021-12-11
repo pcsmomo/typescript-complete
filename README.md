@@ -106,4 +106,26 @@ Typescript will figure out the type of 'color' for us
     2. When we declare a variable on one line then initialize it later
     3. When we want a variable to have a type that can't be inferred
 
+## Section 4. Annotations With Functions and Objects
+
+### 26. Inference Around Functions
+
+```js
+const add = (a: number, b: number): number => {
+  return a + b;
+};
+⏸⏸⏸
+const add = (a: number, b: number) => {
+  return a + b;
+};
+❗️❗️❗️
+const add = (a: number, b: number) => {
+  a + b;
+};
+// return void
+```
+
+- Arguments: No type inference for arguments!
+- Return type: Type inference works out output, **but we won't use it!**
+
 </details>
