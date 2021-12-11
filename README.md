@@ -4,6 +4,9 @@ Typescript: The Complete Developer's Guide by Stephen Grider
 
 ## Folder structure
 
+- 01-getting-started
+  - fetchjson
+
 # Details
 
 <details open> 
