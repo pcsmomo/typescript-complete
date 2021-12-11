@@ -8,6 +8,9 @@ Typescript: The Complete Developer's Guide by Stephen Grider
   - fetchjson
 - 02-type-system
   - features
+- 03-type-annotations
+  - features
+    - 01-annotations
 
 # Details
 
