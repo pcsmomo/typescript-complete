@@ -44,4 +44,31 @@ npm init -y
 npm install --save axios
 ```
 
+## Section 2. What is a Type System?
+
+### 12. Types
+
+Type: Easy way to refer to the different properties + functions that a value has
+
+### 13. More on Types
+
+- Primitive Types
+  - number
+  - string
+  - boolean
+  - undefined
+  - null
+  - void
+  - symbol
+- Object Types
+  - functions
+  - arrays
+  - classes
+  - objects
+
+Why do we care about types?
+
+- Types are used by the Typescript Compiler to analyze our code for errors
+- Types allow other engineers to understand what values are flowing around our codebase
+
 </details>
