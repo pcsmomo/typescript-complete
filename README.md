@@ -6,6 +6,8 @@ Typescript: The Complete Developer's Guide by Stephen Grider
 
 - 01-getting-started
   - fetchjson
+- 02-type-system
+  - features
 
 # Details
 
@@ -70,5 +72,11 @@ Why do we care about types?
 
 - Types are used by the Typescript Compiler to analyze our code for errors
 - Types allow other engineers to understand what values are flowing around our codebase
+
+### 14. Examples of Types
+
+```sh
+mkdir features
+```
 
 </details>
