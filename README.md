@@ -10,7 +10,10 @@ Typescript: The Complete Developer's Guide by Stephen Grider
   - features
 - 03-type-annotations
   - features
-    - 01-annotations
+    - annotations
+- 04-function-object
+  - features
+    - annotations
 
 # Details
 
@@ -160,6 +163,15 @@ const logWeather = ({
   console.log(date);
   console.log(weather);
 };
+```
+
+### 30. Annotations Around Objects
+
+```js
+const { age, firstName }: { age: number, firstName: string } = profile;
+const {
+  coords: { lat, lng },
+}: { coords: { lat: number, lng: number } } = profile;
 ```
 
 </details>
