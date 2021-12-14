@@ -21,7 +21,9 @@ const printVehicle = (vehicle: Vehicle): void => {
 
 printVehicle(oldCivic);
 
-/* functions */
+/**************/
+/** functions */
+// Reusuable interface!!
 interface Reportable {
   summary(): string;
 }
@@ -35,8 +37,18 @@ const oldCivic2 = {
   },
 };
 
+const drink = {
+  color: 'brown',
+  carbonated: true,
+  sugar: 40,
+  summary(): string {
+    return `My drink has ${this.sugar} grams of sugar`;
+  },
+};
+
 const printSummary = (item: Reportable): void => {
   console.log(item.summary());
 };
 
 printSummary(oldCivic2);
+printSummary(drink);
