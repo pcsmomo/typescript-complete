@@ -20,3 +20,23 @@ const printVehicle = (vehicle: Vehicle): void => {
 };
 
 printVehicle(oldCivic);
+
+/* functions */
+interface Reportable {
+  summary(): string;
+}
+
+const oldCivic2 = {
+  name: 'civic',
+  year: new Date(),
+  broken: true,
+  summary(): string {
+    return `Name: ${this.name}`;
+  },
+};
+
+const printSummary = (item: Reportable): void => {
+  console.log(item.summary());
+};
+
+printSummary(oldCivic2);
