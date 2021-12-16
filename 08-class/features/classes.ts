@@ -50,3 +50,21 @@ class Vehicle3 {
 
 const vehicle3 = new Vehicle3('orange');
 console.log(vehicle3.color);
+
+class Car3 extends Vehicle3 {
+  constructor(public wheels: number, color: string) {
+    super(color);
+  }
+
+  private drive(): void {
+    console.log('vroom');
+  }
+
+  startDrivingProcess(): void {
+    this.drive();
+    this.honk();
+  }
+}
+
+const car3 = new Car3(4, 'red');
+car3.startDrivingProcess();
