@@ -215,4 +215,13 @@ npm install --save faker
 Cannot find module 'faker' or its corresponding type declarations.ts(2307)
 ```
 
+### 55. Type Definition Files
+
+```sh
+npm install --save-dev @types/faker
+# This package contains type definitions for faker
+```
+
+[Definitely Typed](https://definitelytyped.org/)
+
 </details>
