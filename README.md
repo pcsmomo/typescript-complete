@@ -202,4 +202,17 @@ parcel index.html
 # ✨  Built in 11.58s.
 ```
 
+### 54. Generating Random Data
+
+```sh
+npm install --save faker
+```
+
+> [npm faker](https://www.npmjs.com/package/faker): generate massive amounts of fake data in the browser and node.js
+
+```sh
+# We will see this error message a lot during TypeScript course
+Cannot find module 'faker' or its corresponding type declarations.ts(2307)
+```
+
 </details>
