@@ -224,4 +224,25 @@ npm install --save-dev @types/faker
 
 [Definitely Typed](https://definitelytyped.org/)
 
+### 56. Using Type Definition Files
+
+> One of the good thing about TypeScript \
+> We can link to the definition and could use it as a documentation
+
+```js
+class User {
+  name: string;
+  location: { lat: number, lng: number };
+  constructor() {
+    this.name = faker.name.firstName();
+    // Before initialization, location is still undefined
+    // so we cannot use this.location.lat yet
+    this.location = {
+      lat: parseFloat(faker.address.latitude()),
+      lng: parseFloat(faker.address.longitude()),
+    };
+  }
+}
+```
+
 </details>
