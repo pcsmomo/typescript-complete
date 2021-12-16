@@ -250,4 +250,16 @@ class User {
 Convention for TypeScript is to never use `export default` \
 Always use just `export` and `import {}`
 
+### 62. Google Maps Integration
+
+```sh
+npm install --save-dev @types/google.maps
+```
+
+[/// Triple-Slash Directives](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html#-reference-types-)
+
+```js
+/// <reference types="@types/google.maps" />
+```
+
 </details>
