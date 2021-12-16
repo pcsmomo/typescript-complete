@@ -245,4 +245,9 @@ class User {
 }
 ```
 
+### 57. Export Statements inTypescript
+
+Convention for TypeScript is to never use `export default` \
+Always use just `export` and `import {}`
+
 </details>
