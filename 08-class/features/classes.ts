@@ -19,7 +19,7 @@ car.drive();
 car.honk();
 
 /**************/
-// Modifiers
+// 47. Instance Method Modifiers
 class Vehicle2 {
   protected honk(): void {
     console.log('beep');
@@ -27,7 +27,7 @@ class Vehicle2 {
 }
 
 const vehicle2 = new Vehicle2();
-vehicle2.honk();
+// vehicle2.honk();
 
 class Car2 extends Vehicle2 {
   private drive(): void {
@@ -38,3 +38,15 @@ class Car2 extends Vehicle2 {
     this.honk();
   }
 }
+
+/**************/
+// 48. Fields in Classes
+class Vehicle3 {
+  constructor(public color: string) {}
+  protected honk(): void {
+    console.log('beep');
+  }
+}
+
+const vehicle3 = new Vehicle3('orange');
+console.log(vehicle3.color);
