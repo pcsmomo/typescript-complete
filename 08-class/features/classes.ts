@@ -17,3 +17,24 @@ class Car extends Vehicle {
 const car = new Car();
 car.drive();
 car.honk();
+
+/**************/
+// Modifiers
+class Vehicle2 {
+  protected honk(): void {
+    console.log('beep');
+  }
+}
+
+const vehicle2 = new Vehicle2();
+vehicle2.honk();
+
+class Car2 extends Vehicle2 {
+  private drive(): void {
+    console.log('vroom');
+  }
+  public startDrivingProcess(): void {
+    this.drive();
+    this.honk();
+  }
+}
