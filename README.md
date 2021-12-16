@@ -22,6 +22,8 @@ Typescript: The Complete Developer's Guide by Stephen Grider
   - features
 - 08-class
   - features
+- 09-design-patterns
+  - maps
 
 # Details
 
@@ -180,6 +182,24 @@ const { age, firstName }: { age: number, firstName: string } = profile;
 const {
   coords: { lat, lng },
 }: { coords: { lat: number, lng: number } } = profile;
+```
+
+## Section 9. Design Patterns with Typescript
+
+### 51. App Overview
+
+```sh
+npm install -g parcel-bundler
+```
+
+### 52. Bundling with Parcel
+
+```sh
+mkdir maps
+cd maps
+parcel index.html
+# Server running at http://localhost:1234
+# ✨  Built in 11.58s.
 ```
 
 </details>
