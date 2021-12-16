@@ -262,4 +262,16 @@ npm install --save-dev @types/google.maps
 /// <reference types="@types/google.maps" />
 ```
 
+### 66. Adding Markers
+
+In TypeScript, _class_ can be used two ways
+
+1. to create an object
+2. to refer a type definition
+
+```js
+import { User } from './User';
+import { Company } from './Company';
+```
+
 </details>
