@@ -14,6 +14,14 @@ Typescript: The Complete Developer's Guide by Stephen Grider
 - 04-function-object
   - features
     - annotations
+- 05-array
+  - features
+- 06-tuple
+  - features
+- 07-interface
+  - features
+- 08-class
+  - features
 
 # Details
 
