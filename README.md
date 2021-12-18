@@ -307,4 +307,13 @@ tsc
 tsc -w
 ```
 
+### 77. Concurrent Compilation and Execution
+
+```sh
+npm init -y
+npm install --save nodemon concurrently
+```
+
+[npm concurrently](https://www.npmjs.com/package/concurrently)
+
 </details>
