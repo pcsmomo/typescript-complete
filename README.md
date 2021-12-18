@@ -23,7 +23,9 @@ Typescript: The Complete Developer's Guide by Stephen Grider
 - 08-class
   - features
 - 09-design-patterns
-  - maps
+  - maps: parcel index.html
+- 10-more-design-patterns
+  - sort
 
 # Details
 
@@ -283,6 +285,26 @@ import { Company } from './Company';
 ```js
 // random color
 color: string = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+```
+
+## Section 10. More on Design Patterns
+
+### 76. Configuring the TS Compiler
+
+```sh
+tsc --init
+```
+
+```json
+{
+  "rootDir": "./src" /* Specify the root folder within your source files. */,
+  "outDir": "./build" /* Specify an output folder for all emitted files. */
+}
+```
+
+```sh
+tsc
+tsc -w
 ```
 
 </details>

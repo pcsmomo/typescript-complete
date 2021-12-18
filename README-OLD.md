@@ -1,11 +1,3 @@
-## Section 9. Design Patterns with Typescript
-
-# 73. Configuring the TS Complier
-
-## tsc --init
-
-> Generate tsconfig.json
-
 # 74. Concurrent Compliation and Execution
 
 ## npm init -y
