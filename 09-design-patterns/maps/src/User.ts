@@ -7,7 +7,8 @@ export class User implements Mappable {
     lat: number;
     lng: number;
   };
-  color: string = 'red';
+  // random color
+  color: string = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
   useCustomMarker: boolean = true;
 
   constructor() {

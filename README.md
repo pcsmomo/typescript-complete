@@ -278,4 +278,11 @@ import { Company } from './Company';
 
 [Google Map Marker Info Windows](https://developers.google.com/maps/documentation/javascript/infowindows)
 
+### 73. Optional Implements Clauses
+
+```js
+// random color
+color: string = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+```
+
 </details>
