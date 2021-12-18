@@ -274,4 +274,8 @@ import { User } from './User';
 import { Company } from './Company';
 ```
 
+### 71. Showing Popup Windows
+
+[Google Map Marker Info Windows](https://developers.google.com/maps/documentation/javascript/infowindows)
+
 </details>
