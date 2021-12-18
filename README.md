@@ -316,4 +316,20 @@ npm install --save nodemon concurrently
 
 [npm concurrently](https://www.npmjs.com/package/concurrently)
 
+### 81. Two Huge Issues
+
+```js
+'X'.charCodeAt(0);
+'a'.charCodeAt(0);
+```
+
+### 83. Type Guards
+
+- typeof: for Primitive type
+  - string, number, boolean, etc.
+  - `typeof this.collection === 'string'`
+- instanceof: for Object type
+  - Array, Object, Date, "Class Name", etc.
+  - `this.collection instanceof Array`
+
 </details>
