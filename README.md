@@ -342,4 +342,14 @@ What if we have 50 different types of collections? 50 if statements
 
 Create Collection Class and have all logic
 
+### 86. Separating Swapping and Comparison
+
+```js
+get length(): number {
+  return this.data.length;
+}
+const collection = new NumbersCollection([1, 2, 3]);
+collection.length;
+```
+
 </details>
