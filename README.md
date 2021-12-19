@@ -338,4 +338,8 @@ If we have different type of collection such as LinkedList,\
 we need to create a new if statement \
 What if we have 50 different types of collections? 50 if statements
 
+### 85. Extracting Key Logic
+
+Create Collection Class and have all logic
+
 </details>
