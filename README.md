@@ -25,7 +25,9 @@ Typescript: The Complete Developer's Guide by Stephen Grider
 - 09-design-patterns
   - maps: parcel index.html
 - 10-more-design-patterns
-  - sort
+  - sort: npm start
+- 11-reusable-code
+  - stats: npm start
 
 # Details
 
@@ -364,5 +366,16 @@ Our scenario is perfect to use Abstract Class at this point!!
 - Inheritance/Abstract Classes
   - Strongly couples classes together
   - Use when we are trying to build up a definition of an object
+
+## Section 11. Reusable Code
+
+### 100. Project Setup
+
+```sh
+# /stats
+npm init -y
+tsc --init
+npm install --save nodemon concurrently
+```
 
 </details>
