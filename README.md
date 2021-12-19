@@ -378,4 +378,10 @@ tsc --init
 npm install --save nodemon concurrently
 ```
 
+### 102. Type Definition Files - Again!
+
+```sh
+npm install --save-dev @types/node
+```
+
 </details>
