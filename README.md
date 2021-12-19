@@ -352,4 +352,8 @@ const collection = new NumbersCollection([1, 2, 3]);
 collection.length;
 ```
 
+### 95. Abstract Classes: (Broken still)
+
+Our scenario is perfect to use Abstract Class at this point!!
+
 </details>
