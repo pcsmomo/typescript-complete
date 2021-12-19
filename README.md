@@ -332,4 +332,10 @@ npm install --save nodemon concurrently
   - Array, Object, Date, "Class Name", etc.
   - `this.collection instanceof Array`
 
+### 84. Why is This Bad?
+
+If we have different type of collection such as LinkedList,\
+we need to create a new if statement \
+What if we have 50 different types of collections? 50 if statements
+
 </details>
