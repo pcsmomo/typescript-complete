@@ -356,4 +356,13 @@ collection.length;
 
 Our scenario is perfect to use Abstract Class at this point!!
 
+### 98. Interfaces vs Abstract Classes
+
+- Interfaces
+  - Loose coupling
+  - Use when we have very different objects that we want to work together
+- Inheritance/Abstract Classes
+  - Strongly couples classes together
+  - Use when we are trying to build up a definition of an object
+
 </details>
