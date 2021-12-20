@@ -5,6 +5,8 @@ reader.read();
 // 10/08/2018,Man United,Leicester,2,1,H,A Marriner
 // 0         ,1         ,2        ,3,4,5,6
 
+console.log(reader.data);
+
 // enum - enumeration
 enum MatchResult {
   HomeWin = 'H',
