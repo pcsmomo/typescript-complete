@@ -1,18 +1,12 @@
 import { CsvFileReader } from './CsvFileReader';
+import { MatchResult } from './MatchResult';
 
 const reader = new CsvFileReader('football.csv');
 reader.read();
 // 10/08/2018,Man United,Leicester,2,1,H,A Marriner
 // 0         ,1         ,2        ,3,4,5,6
 
-console.log(reader.data);
-
-// enum - enumeration
-enum MatchResult {
-  HomeWin = 'H',
-  AwayWin = 'A',
-  Draw = 'D',
-}
+// console.log(reader.data);
 
 let manUnitedWins = 0;
 
