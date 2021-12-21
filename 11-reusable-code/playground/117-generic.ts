@@ -15,6 +15,10 @@ holdString.data = 'abcd';
 // Using Generic
 class HoldAnything<TypeOfData> {
   data: TypeOfData;
+
+  add(a: TypeOfData): TypeOfData {
+    return a;
+  }
 }
 
 const holdNumber2 = new HoldAnything<number>();
