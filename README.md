@@ -384,4 +384,8 @@ npm install --save nodemon concurrently
 npm install --save-dev @types/node
 ```
 
+### 117. Variable Types with Generics
+
+<T> : using <T> instead of long name, <TypeOfData> convention of using Generics
+
 </details>
