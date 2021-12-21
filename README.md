@@ -388,6 +388,15 @@ npm install --save-dev @types/node
 
 <T> : using <T> instead of long name, <TypeOfData> convention of using Generics
 
+### 119. Alternate Refactor
+
+Two way to improve FileReader
+
+1. inheritance: abstract class based
+   - **"115. Understanding Refactor #1"** to **"118. Applying a Type to a Generic Class"**
+2. interface-based
+   - **"119. Alternate Refactor"** to
+
 </details>
 
 ## TODO after this course
