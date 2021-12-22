@@ -395,7 +395,7 @@ Two way to improve FileReader
 1. inheritance: abstract class based
    - **"115. Understanding Refactor #1"** to **"118. Applying a Type to a Generic Class"**
 2. interface-based
-   - **"119. Alternate Refactor"** to
+   - **"119. Alternate Refactor"** to **"123. Updating Reader References"**
 
 </details>
 
