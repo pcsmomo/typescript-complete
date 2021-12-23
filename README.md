@@ -31,6 +31,8 @@ Typescript: The Complete Developer's Guide by Stephen Grider
   - stats: npm start
     - Very strong Composition Pattern!!
     - Also it has inheritance pattern separately
+  - stats-static
+    - using static method
 
 # Details
 
@@ -424,6 +426,16 @@ The meaning of Composition in the book, 'Design Patterns' and bloggers say are d
    - Delegation: each class does one whole process
 2. Composition by bloggers
    - just composing some functions again and again - bad pattern
+
+### 133. One Last Thing!
+
+Using static method......
+
+I think this approach has pros and cons.
+
+index.ts got a lot simpler \
+but Summary and MatchReader got strongly wired with the other compsition classes such as HtmlReport and CsvFileReader.\
+Probably, Stephen just wanted to show there is another approach we can choose.
 
 </details>
 
