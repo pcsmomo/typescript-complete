@@ -28,6 +28,7 @@ Typescript: The Complete Developer's Guide by Stephen Grider
   - sort: npm start
 - 11-reusable-code
   - stats: npm start
+    - Very strong Composition Pattern!!
 
 # Details
 
