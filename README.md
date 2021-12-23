@@ -394,8 +394,18 @@ Two way to improve FileReader
 
 1. inheritance: abstract class based
    - **"115. Understanding Refactor #1"** to **"118. Applying a Type to a Generic Class"**
-2. interface-based
+2. composition: interface based
    - **"119. Alternate Refactor"** to **"123. Updating Reader References"**
+
+### 125. More on Inheritance vs Composition
+
+1. Inheritance
+   ![inheritance](./resources/inheritance.jpeg)
+   - there would be some duplication for two window classes
+2. Composition
+   ![composition](./resources/composition.jpeg)
+   ![composition-match-reader](./resources/composition-match-reader.jpeg)
+   - more independent and easier to use
 
 </details>
 
