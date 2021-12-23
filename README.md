@@ -407,6 +407,21 @@ Two way to improve FileReader
    ![composition-match-reader](./resources/composition-match-reader.jpeg)
    - more independent and easier to use
 
+### 126. A Huge Misconception Around Composition
+
+'Design Patterns' by Erich Gamma, Richard Helm, Ralph Johnson, and John Vivissides
+
+_Favor object composition over class inheritance_
+
+**Delegation**
+
+The meaning of Composition in the book, 'Design Patterns' and bloggers say are different.
+
+1. Composition in the Design Patterns book
+   - Delegation
+2. Composition by bloggers
+   - just composing some functions again and again - bad pattern
+
 </details>
 
 ## TODO after this course
