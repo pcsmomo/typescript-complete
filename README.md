@@ -418,7 +418,7 @@ _Favor object composition over class inheritance_
 The meaning of Composition in the book, 'Design Patterns' and bloggers say are different.
 
 1. Composition in the Design Patterns book
-   - Delegation
+   - Delegation: each class does one whole process
 2. Composition by bloggers
    - just composing some functions again and again - bad pattern
 

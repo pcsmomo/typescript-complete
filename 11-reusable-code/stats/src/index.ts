@@ -21,5 +21,3 @@ for (let match of matchReader.matches) {
 }
 
 console.log(`Man United won ${manUnitedWins} games`);
-
-// This is Bad!? -> Refactoring will come up
