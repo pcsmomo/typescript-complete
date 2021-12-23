@@ -26,9 +26,11 @@ Typescript: The Complete Developer's Guide by Stephen Grider
   - maps: parcel index.html
 - 10-more-design-patterns
   - sort: npm start
+    - Inheritance Pattern - abstract class
 - 11-reusable-code
   - stats: npm start
     - Very strong Composition Pattern!!
+    - Also it has inheritance pattern separately
 
 # Details
 
