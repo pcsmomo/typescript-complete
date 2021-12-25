@@ -437,6 +437,8 @@ index.ts got a lot simpler \
 but Summary and MatchReader got strongly wired with the other compsition classes such as HtmlReport and CsvFileReader.\
 Probably, Stephen just wanted to show there is another approach we can choose.
 
+## Section 12. Advanced Generics
+
 </details>
 
 ## TODO after this course
