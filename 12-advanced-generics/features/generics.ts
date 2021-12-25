@@ -1,3 +1,4 @@
+// 1. Example of primitive types
 class ArrayOfNumbers {
   constructor(public collection: number[]) {}
 
@@ -22,4 +23,28 @@ class ArrayOfAnything<T> {
   }
 }
 
-new ArrayOfAnything<string>(['a', 'b', 'c']);
+const arr = new ArrayOfAnything<string>(['a', 'b', 'c']);
+
+// 2. Exmaple of generics with functions
+function printStrings(arr: string[]): void {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
+
+function printNumbers(arr: number[]): void {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
+
+function printAnything<T>(arr: T[]): void {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
+
+printAnything(['a', 11, 'c']); // This could make an error
+
+// So, suggested using <> type annotation
+printAnything<string>(['a', 'b', 'c']);
