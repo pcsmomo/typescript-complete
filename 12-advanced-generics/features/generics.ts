@@ -48,3 +48,30 @@ printAnything(['a', 11, 'c']); // This could make an error
 
 // So, suggested using <> type annotation
 printAnything<string>(['a', 'b', 'c']);
+
+// 3.  Generic Constraints
+class Car {
+  print() {
+    console.log('I am a car');
+  }
+}
+
+class House {
+  print() {
+    console.log('I am a house');
+  }
+}
+
+interface Printable {
+  print(): void;
+}
+
+function printHousesOrCars<T extends Printable>(arr: T[]): void {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i].print();
+  }
+}
+
+printHousesOrCars<House>([new House(), new House()]);
+printHousesOrCars<Car>([new Car(), new Car()]);
+printHousesOrCars<Car>([new House(), new Car()]); // hmm.. this doesn't catch any error
