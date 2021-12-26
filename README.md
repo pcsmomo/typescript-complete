@@ -33,6 +33,10 @@ Typescript: The Complete Developer's Guide by Stephen Grider
     - Also it has inheritance pattern separately
   - stats-static
     - using static method
+- 12-advanced-generics
+  - features
+- 13-web-framework
+  - web
 
 # Details
 
@@ -438,6 +442,15 @@ but Summary and MatchReader got strongly wired with the other compsition classes
 Probably, Stephen just wanted to show there is another approach we can choose.
 
 ## Section 12. Advanced Generics
+
+## Section 13. Let's Build a Web Framework
+
+### 141. Parcel Setup
+
+```sh
+npm install -g parcel-bundler
+parcel index.html
+```
 
 </details>
 
