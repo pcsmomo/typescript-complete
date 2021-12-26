@@ -464,6 +464,15 @@ parcel index.html
 type Callback = () => {};
 ```
 
+### 148. Storing Event Listeners
+
+```js
+export class User {
+  // when we don't know what name of key will be used
+  events: { [key: string]: Callback[] } = {};
+}
+```
+
 </details>
 
 ## TODO after this course
