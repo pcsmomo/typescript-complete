@@ -457,6 +457,13 @@ parcel index.html
 1. Model Classes
 2. View Classes
 
+### 147. Listener Support
+
+```js
+// rather than just using () => {}, type it
+type Callback = () => {};
+```
+
 </details>
 
 ## TODO after this course
