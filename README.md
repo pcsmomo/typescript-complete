@@ -460,9 +460,11 @@ parcel index.html
 ### 147. Listener Support
 
 ```js
-// rather than just using () => {}, type it
-type Callback = () => {};
+// rather than just using () => void, type it
+type Callback = () => void;
 ```
+
+> `() => {}` means this function will return {} object type, not void
 
 ### 148. Storing Event Listeners
 
