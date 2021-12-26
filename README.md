@@ -452,6 +452,11 @@ npm install -g parcel-bundler
 parcel index.html
 ```
 
+### 142. Framework Structure
+
+1. Model Classes
+2. View Classes
+
 </details>
 
 ## TODO after this course
