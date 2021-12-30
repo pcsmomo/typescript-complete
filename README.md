@@ -505,6 +505,31 @@ json-server -w db.json
   - PATCH /users/1
   - DELETE /users/1
 
+### 157. Re-Integrating Eventing
+
+1. Option #1
+   - Accept dependencies as second constructor argument
+2. Option #2
+   - Only accpet dependenies into constructor defined a static class method to preconfigure user and assign properties afterwards
+   - Similar to MatchReader from the last section
+3. O, Option #3
+   - Only accept properties into constructor
+   - Hard code dependencies as class properties
+
+### 160. Options for Adapting Sync
+
+1. Option #1
+   - Sync gets function arguments
+2. Option #2
+   - Sync expects arguments that satisfy interfaces 'Serialize' and 'Deserialize'
+   - Serialize
+     - Convert data from an object into some save-able format (json)
+   - Deserialize
+     - Put data on an object using some previously saved data (json)
+3. O, Option #3
+   - Sync is a generic class to customize the type of 'data' coming into save()
+   - The most complicated but it'd be the best approach
+
 </details>
 
 ## TODO after this course
