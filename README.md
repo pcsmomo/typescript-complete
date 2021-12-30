@@ -23,12 +23,12 @@ Typescript: The Complete Developer's Guide by Stephen Grider
 - 08-class
   - features
 - 09-design-patterns
-  - maps: parcel index.html
+  - maps: `parcel index.html`
 - 10-more-design-patterns
-  - sort: npm start
+  - sort: `npm start`
     - Inheritance Pattern - abstract class
 - 11-reusable-code
-  - stats: npm start
+  - stats: `npm start`
     - Very strong Composition Pattern!!
     - Also it has inheritance pattern separately
   - stats-static
@@ -37,6 +37,8 @@ Typescript: The Complete Developer's Guide by Stephen Grider
   - features
 - 13-web-framework
   - web
+    - run server: `json-server -w db.json` or `npm run start:db`
+    - run client: `parcel index.html` or `npm run start:parcel`
 
 # Details
 
@@ -473,6 +475,24 @@ export class User {
   // when we don't know what name of key will be used
   events: { [key: string]: Callback[] } = {};
 }
+```
+
+### 151. Adding JSON Server
+
+```sh
+npm install --save axios
+npm install -g json-server
+```
+
+create db.json file
+
+```json
+{ "users": [] }
+```
+
+```sh
+# Run db server
+json-server -w db.json
 ```
 
 </details>
