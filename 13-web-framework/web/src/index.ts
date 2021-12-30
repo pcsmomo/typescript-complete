@@ -1,13 +1,23 @@
 import { User } from './models/User';
 
 //**************************************/
-// Sample Code 4. Save user
-const user = new User({ id: 1 });
-user.set({ name: 'NEW NAME', age: 9999 });
-user.save();
+// Sample Code 5. for event listening and triger with composition pattern
+const user = new User({ name: 'new record', age: 0 });
 
-const user2 = new User({ name: 'new record', age: 0 });
-user2.save();
+user.events.on('change', () => {
+  console.log('change');
+});
+
+user.events.trigger('change');
+
+//**************************************/
+// Sample Code 4. Save user
+// const user = new User({ id: 1 });
+// user.set({ name: 'NEW NAME', age: 9999 });
+// user.save();
+
+// const user2 = new User({ name: 'new record', age: 0 });
+// user2.save();
 
 //**************************************/
 // Sample Code 3. Fetch user
