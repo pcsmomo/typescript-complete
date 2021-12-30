@@ -495,6 +495,15 @@ create db.json file
 json-server -w db.json
 ```
 
+- [npm json-server](https://www.npmjs.com/package/json-server)
+- Get a full fake REST API with zero coding in less than 30 seconds (seriously)
+  - GET /users
+  - GET /users/1
+  - POST /users
+  - PUT /users/1
+  - PATCH /users/1
+  - DELETE /users/1
+
 </details>
 
 ## TODO after this course
