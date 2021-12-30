@@ -530,6 +530,23 @@ json-server -w db.json
    - Sync is a generic class to customize the type of 'data' coming into save()
    - The most complicated but it'd be the best approach
 
+### 164. Optional Properties
+
+```sh
+tsc --init
+# "strict": true,
+# These makes significant behavioural difference
+```
+
+```js
+// before
+const { id } = data; // id: number
+// after "strict": true,
+const { id } = data; // id: numbe | undefinedr
+```
+
+Remove tsconfig.json at the moment. I will have it back later and handle issues
+
 </details>
 
 ## TODO after this course
