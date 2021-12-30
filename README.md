@@ -39,6 +39,7 @@ Typescript: The Complete Developer's Guide by Stephen Grider
   - web
     - run server: `json-server -w db.json` or `npm run start:db`
     - run client: `parcel index.html` or `npm run start:parcel`
+  - 155-before-refactoring: Before refactoring with composition
 
 # Details
 
