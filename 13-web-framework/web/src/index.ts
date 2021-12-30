@@ -1,13 +1,21 @@
 import { User } from './models/User';
 
+//**************************************/
+// Sample Code 4. Save user
 const user = new User({ id: 1 });
+user.set({ name: 'NEW NAME', age: 9999 });
+user.save();
 
-user.fetch();
+const user2 = new User({ name: 'new record', age: 0 });
+user2.save();
 
-console.log(JSON.stringify(user, null, 2));
-setTimeout(() => {
-  console.log(JSON.stringify(user, null, 2));
-}, 1000);
+//**************************************/
+// Sample Code 3. Fetch user
+// user.fetch();
+// console.log(JSON.stringify(user, null, 2));
+// setTimeout(() => {
+//   console.log(JSON.stringify(user, null, 2));
+// }, 1000);
 
 //**************************************/
 // Sample Code 2. axios <---> json-server
