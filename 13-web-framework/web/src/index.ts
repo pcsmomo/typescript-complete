@@ -2,6 +2,7 @@ import { User } from './models/User';
 
 //**************************************/
 // Sample Code 9. save()
+// const user = new User({ id: 1, name: 'newer name', age: 0 });
 const user = new User({ id: 1, name: 'newer name', age: 0 });
 
 user.on('save', () => {
