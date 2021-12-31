@@ -1,16 +1,26 @@
 import { User } from './models/User';
 
 //**************************************/
-// Sample Code 8. fetching
-const user = new User({ id: 1 });
+// Sample Code 9. save()
+const user = new User({ id: 1, name: 'newer name', age: 0 });
 
-user.on('change', () => {
+user.on('save', () => {
   console.log(user);
-  console.log(user.get('name'));
 });
 
-user.fetch();
-console.log(user.get('name'));
+user.save();
+
+//**************************************/
+// Sample Code 8. fetching()
+// const user = new User({ id: 1 });
+
+// user.on('change', () => {
+//   console.log(user);
+//   console.log(user.get('name'));
+// });
+
+// user.fetch();
+// console.log(user.get('name'));
 
 //**************************************/
 // Sample Code 7. using accessor
