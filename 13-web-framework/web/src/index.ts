@@ -1,14 +1,17 @@
 import { User } from './models/User';
 
 //**************************************/
+// Sample Code 7.
+
+//**************************************/
 // Sample Code 6. save with composition pattern : pain in ass
-const user = new User({ name: 'new record', age: 0 });
+// const user = new User({ name: 'new record', age: 0 });
 
-user.attributes.get('id');
-user.attributes.get('name');
-user.attributes.get('age');
+// user.attributes.get('id');
+// user.attributes.get('name');
+// user.attributes.get('age');
 
-user.sync.save();
+// user.sync.save();
 
 //**************************************/
 // Sample Code 5. for event listening and triger with composition pattern

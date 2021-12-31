@@ -572,6 +572,27 @@ export class Attributes<T> {
 }
 ```
 
+### 171. Reminder on Accessors
+
+1. Direct passthrough of arguments
+   - get(), on(), trigger()
+2. Need coordination between different modules in User
+   - set(), fetch(), save()
+
+```js
+// A quick reminder on accessors
+class Person {
+  constructor(public firstName: string, public lastName: string) {}
+
+  get fullName(): string{
+    return `${this.firstName} ${this.lastName}`
+  }
+}
+
+const person = new Person('firstname', 'lastname');
+console.log(person.fullName);
+```
+
 </details>
 
 ## TODO after this course
