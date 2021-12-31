@@ -10,7 +10,9 @@ user.on('change', () => {
   console.log('user was changed');
 });
 
-user.trigger('change');
+user.set({ name: 'New name' });
+
+console.log(user.get('name'));
 
 //**************************************/
 // Sample Code 6. save with composition pattern : pain in ass
