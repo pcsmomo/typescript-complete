@@ -593,6 +593,24 @@ const person = new Person('firstname', 'lastname');
 console.log(person.fullName);
 ```
 
+### 172. Passthrough Methods
+
+```js
+// models/user.js
+export class User {
+  public events: Eventing = new Eventing();
+  get on() {
+    return this.events.on;
+  }
+}
+
+// index.js
+const user = new User({ name: 'new record', age: 0 });
+user.on('change', () => {
+  console.log('user was changed');
+});
+```
+
 </details>
 
 ## TODO after this course

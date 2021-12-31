@@ -1,7 +1,14 @@
 import { User } from './models/User';
 
 //**************************************/
-// Sample Code 7.
+// Sample Code 7. using accessor
+const user = new User({ name: 'new record', age: 0 });
+
+user.on('change', () => {
+  console.log('user was changed');
+});
+
+user.trigger('change');
 
 //**************************************/
 // Sample Code 6. save with composition pattern : pain in ass
