@@ -627,6 +627,32 @@ get = <K extends keyof T>(key: K): T[K] => {
 
 > Stephen's opinion, in most cases, we might need arrow functions, not keyword function
 
+### 182. Shortened Passthrough Methods
+
+```js
+get on() {
+  return this.events.on;
+}
+⬇️⬇️⬇️
+on = this.events.on;
+```
+
+```js
+class Car {
+  engine: Engine;
+  constructor() {
+    this.engine = new Engine();
+  }
+  start = this.engine.start;
+  // Property 'engine' is used before its initialization.ts
+}
+⬇️⬇️⬇️
+class Car {
+  constructor(private engine: Engine) {}
+  start = this.engine.start;
+}
+```
+
 </details>
 
 ## TODO after this course
