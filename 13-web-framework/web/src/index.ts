@@ -1,15 +1,29 @@
 //**************************************/
-// Sample Code 11. Collection()
-// 185. Parsing User JSON
+// Sample Code 12. Collection()
+// 186. Generic User Collection
+import { User, UserProps } from './models/User';
 import { Collection } from './models/Collection';
 
-const collection = new Collection('http://localhost:3000/users');
+const collection = new Collection<User, UserProps>(
+  'http://localhost:3000/users',
+  (json: UserProps) => User.buildUser(json)
+);
 
 collection.on('change', () => {
   console.log(collection);
 });
 
 collection.fetch();
+
+//**************************************/
+// Sample Code 11. Collection()
+// 185. Parsing User JSON
+// import { Collection } from './models/Collection';
+// const collection = new Collection('http://localhost:3000/users');
+// collection.on('change', () => {
+//   console.log(collection);
+// });
+// collection.fetch();
 
 //**************************************/
 // Sample Code 10. initial Collection

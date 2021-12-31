@@ -653,6 +653,30 @@ class Car {
 }
 ```
 
+### 186. Generic User Collection
+
+```js
+// Collection.ts
+constructor(public rootUrl: string) {}
+⬇️⬇️⬇️
+constructor(public rootUrl: string, public deserialize: (json: K) => T) {}
+//////////////////////////////////
+const user = User.buildUser(value);
+this.models.push(user);
+⬇️⬇️⬇️
+this.models.push(this.deserialize(value));
+```
+
+```js
+// index.ts
+const collection = new Collection('http://localhost:3000/users');
+⬇️⬇️⬇️
+const collection = new Collection<User, UserProps>(
+  'http://localhost:3000/users',
+  (json: UserProps) => User.buildUser(json)
+);
+```
+
 </details>
 
 ## TODO after this course
