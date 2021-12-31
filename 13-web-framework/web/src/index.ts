@@ -1,18 +1,28 @@
 import { User } from './models/User';
 
 //**************************************/
-// Sample Code 7. using accessor
-const user = new User({ name: 'new record', age: 0 });
-
-console.log(user.get('name'));
+// Sample Code 8. fetching
+const user = new User({ id: 1 });
 
 user.on('change', () => {
-  console.log('user was changed');
+  console.log(user);
+  console.log(user.get('name'));
 });
 
-user.set({ name: 'New name' });
-
+user.fetch();
 console.log(user.get('name'));
+
+//**************************************/
+// Sample Code 7. using accessor
+// const user = new User({ name: 'new record', age: 0 });
+// console.log(user.get('name'));
+
+// user.on('change', () => {
+//   console.log('user was changed');
+// });
+
+// user.set({ name: 'New name' });
+// console.log(user.get('name'));
 
 //**************************************/
 // Sample Code 6. save with composition pattern : pain in ass
