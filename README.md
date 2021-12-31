@@ -611,6 +611,22 @@ user.on('change', () => {
 });
 ```
 
+### 173. A Context Issue
+
+```js
+console.log(user.get('name'));
+
+get<K extends keyof T>(key: K): T[K] {
+  return this.data[key];
+};
+⬇️⬇️⬇️
+get = <K extends keyof T>(key: K): T[K] => {
+  return this.data[key];
+};
+```
+
+> Stephen's opinion, in most cases, we might need arrow functions, not keyword function
+
 </details>
 
 ## TODO after this course

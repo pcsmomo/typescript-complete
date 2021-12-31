@@ -4,6 +4,8 @@ import { User } from './models/User';
 // Sample Code 7. using accessor
 const user = new User({ name: 'new record', age: 0 });
 
+console.log(user.get('name'));
+
 user.on('change', () => {
   console.log('user was changed');
 });
