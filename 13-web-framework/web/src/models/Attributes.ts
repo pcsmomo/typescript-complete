@@ -12,12 +12,12 @@ export class Attributes<T> {
   }
 }
 
-const attrs = new Attributes<UserProps>({
-  id: 5,
-  age: 20,
-  name: 'noah',
-});
+// const attrs = new Attributes<UserProps>({
+//   id: 5,
+//   age: 20,
+//   name: 'noah',
+// });
 
-const name = attrs.get('name');
-const age = attrs.get('age');
-const id = attrs.get('id');
+// const name = attrs.get('name');
+// const age = attrs.get('age');
+// const id = attrs.get('id');
