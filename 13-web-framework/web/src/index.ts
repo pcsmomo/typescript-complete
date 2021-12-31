@@ -1,14 +1,24 @@
 import { User } from './models/User';
 
 //**************************************/
-// Sample Code 5. for event listening and triger with composition pattern
+// Sample Code 6. save with composition pattern : pain in ass
 const user = new User({ name: 'new record', age: 0 });
 
-user.events.on('change', () => {
-  console.log('change');
-});
+user.attributes.get('id');
+user.attributes.get('name');
+user.attributes.get('age');
 
-user.events.trigger('change');
+user.sync.save();
+
+//**************************************/
+// Sample Code 5. for event listening and triger with composition pattern
+// const user = new User({ name: 'new record', age: 0 });
+
+// user.events.on('change', () => {
+//   console.log('change');
+// });
+
+// user.events.trigger('change');
 
 //**************************************/
 // Sample Code 4. Save user
