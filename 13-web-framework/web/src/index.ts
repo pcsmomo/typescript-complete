@@ -1,17 +1,38 @@
-import { User } from './models/User';
+//**************************************/
+// Sample Code 11. Collection()
+// 185. Parsing User JSON
+import { Collection } from './models/Collection';
+
+const collection = new Collection('http://localhost:3000/users');
+
+collection.on('change', () => {
+  console.log(collection);
+});
+
+collection.fetch();
+
+//**************************************/
+// Sample Code 10. initial Collection
+// 185. Parsing User JSON
+// import axios, { AxiosResponse } from 'axios';
+
+// axios.get('http://localhost:3000/users').then((response: AxiosResponse) => {
+//   console.log(response.data);
+// });
 
 //**************************************/
 // Sample Code 9. save()
+// import { User } from './models/User';
 // const user = new User({ id: 1, name: 'newer name', age: 0 });
-const user = User.buildUser({ id: 1, name: 'yay  name', age: 0 });
+// const user = User.buildUser({ id: 1, name: 'yay  name', age: 0 });
 
-user.on('save', () => {
-  console.log(user);
-});
+// user.on('save', () => {
+//   console.log(user);
+// });
 
-user.save();
+// user.save();
 
-console.log(user.isAdminUser());
+// console.log(user.isAdminUser());
 
 //**************************************/
 // Sample Code 8. fetching()
