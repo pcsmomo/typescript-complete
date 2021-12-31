@@ -3,13 +3,15 @@ import { User } from './models/User';
 //**************************************/
 // Sample Code 9. save()
 // const user = new User({ id: 1, name: 'newer name', age: 0 });
-const user = new User({ id: 1, name: 'newer name', age: 0 });
+const user = User.buildUser({ id: 1, name: 'yay  name', age: 0 });
 
 user.on('save', () => {
   console.log(user);
 });
 
 user.save();
+
+console.log(user.isAdminUser());
 
 //**************************************/
 // Sample Code 8. fetching()
