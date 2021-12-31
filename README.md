@@ -561,6 +561,17 @@ Remove tsconfig.json at the moment. I will have it back later and handle issues
    };
    ```
 
+### 168. An Advanced Generic Constraint
+
+```js
+export class Attributes<T> {
+  constructor(private data: T) {}
+  get<K extends keyof T>(key: K): T[K] {
+    return this.data[key];
+  }
+}
+```
+
 </details>
 
 ## TODO after this course
