@@ -547,6 +547,20 @@ const { id } = data; // id: numbe | undefinedr
 
 Remove tsconfig.json at the moment. I will have it back later and handle issues
 
+### 167. Two Important Rules
+
+1. In Typescript, strings can be types
+   ```js
+   type BestName = 'stephen';
+   ```
+2. In JS (and therefore TS), all object keys are strings
+   ```js
+   const color = {
+     red: 'red',
+     5: 'red',
+   };
+   ```
+
 </details>
 
 ## TODO after this course
