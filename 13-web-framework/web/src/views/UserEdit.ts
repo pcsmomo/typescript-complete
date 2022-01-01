@@ -19,7 +19,7 @@ export class UserEdit extends View<User, UserProps> {
 
   template(): string {
     return `
-      <div>
+      <div class="user-edit">
         <div class="user-show-wrapper"></div>
         <div class="user-form-wrapper"></div>
       </div>

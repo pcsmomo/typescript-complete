@@ -4,15 +4,15 @@ import './index.css';
 // Sample Code 15. Views - UserEdit() with regionsMap
 // 210. CollectionView Implementation
 import { UserList } from './views/UserList';
-import { Collection } from './models/Collection';
-import { User, UserProps } from './models/User';
+import { User } from './models/User';
 
-const users = new Collection(
-  'http://localhost:3000/users',
-  (json: UserProps) => {
-    return User.buildUser(json);
-  }
-);
+// const users = new Collection(
+//   'http://localhost:3000/users',
+//   (json: UserProps) => {
+//     return User.buildUser(json);
+//   }
+// );
+const users = User.buildUserCollection();
 
 users.on('change', () => {
   const root = document.getElementById('root');
