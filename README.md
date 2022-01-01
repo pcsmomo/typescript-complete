@@ -705,7 +705,17 @@ if (input) {
 - Collection - composition : Model[]
 
 - View - composition: Model
-- UserForm -> Inherit View
+- UserEdit
+  - inherit View
+  - composition: UserShow, UserForm
+- inherit ColllectionView
+  - UserList
+    - inherit ColllectionView
+    - composition UserEdit
+
+### 210. CollectionView Implementation
+
+[html template content](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)
 
 </details>
 
