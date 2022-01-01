@@ -698,6 +698,15 @@ if (input) {
 }
 ```
 
+### 202. Extending with Generic Constraints
+
+- Model - composition : Events, Attributes, ApiSync
+- User - inherite Model
+- Collection - composition : Model[]
+
+- View - composition: Model
+- UserForm -> Inherit View
+
 </details>
 
 ## TODO after this course
