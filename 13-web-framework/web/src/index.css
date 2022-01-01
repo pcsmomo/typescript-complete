@@ -13,10 +13,6 @@ body {
   margin: 2.5em auto;
 }
 
-.user-form * {
-  margin-bottom: 0.75em;
-}
-
 input {
   padding: 0.5em;
   border-radius: 5px;

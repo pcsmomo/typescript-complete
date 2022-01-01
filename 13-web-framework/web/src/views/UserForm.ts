@@ -1,3 +1,4 @@
+import './UserForm.styles.css';
 import { User, UserProps } from '../models/User';
 import { View } from './View';
 
