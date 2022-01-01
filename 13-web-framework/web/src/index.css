@@ -13,7 +13,7 @@ body {
   margin: 2.5em auto;
 }
 
-h1 {
+.userForm * {
   margin-bottom: 0.75em;
 }
 
