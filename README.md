@@ -680,6 +680,24 @@ const collection = new Collection<User, UserProps>(
 
 [html template tag - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)
 
+### 199. Strict Null Checks
+
+```sh
+tsc --init
+# "strict": true,
+```
+
+```js
+const name2 = input.value;
+// Object is possibly 'null'.ts(2531)
+⬇️⬇️⬇️
+// Use type guard
+if (input) {
+  const name = input.value;
+  this.model.set({ name });
+}
+```
+
 </details>
 
 ## TODO after this course
