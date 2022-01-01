@@ -676,6 +676,10 @@ const collection = new Collection<User, UserProps>(
 );
 ```
 
+### 190. The UserForm's Render Method
+
+[html template tag - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)
+
 </details>
 
 ## TODO after this course
