@@ -717,6 +717,12 @@ if (input) {
 
 [html template content](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)
 
+### 211. App Wrapup
+
+> This web framework we just built a bit simpler version of marionette.js - backbone.js\
+> marionette.js: View, Region\
+> backbone.js: Collection, Sync, get(), set()
+
 </details>
 
 ## TODO after this course
