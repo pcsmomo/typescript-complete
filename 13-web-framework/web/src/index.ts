@@ -1,9 +1,9 @@
 import './index.css';
 
 //**************************************/
-// Sample Code 14. Views - UserForm()
-// 191. Rendering HTML
-import { UserForm } from './views/UserForm';
+// Sample Code 15. Views - UserEdit() with regionsMap
+// 207. Testing Region Mapping
+import { UserEdit } from './views/UserEdit';
 import { User } from './models/User';
 
 const user = User.buildUser({ name: 'NAME', age: 20 });
@@ -11,11 +11,31 @@ const user = User.buildUser({ name: 'NAME', age: 20 });
 const root = document.getElementById('root');
 
 if (root) {
-  const userForm = new UserForm(root, user);
-  userForm.render();
+  const userEdit = new UserEdit(root, user);
+
+  userEdit.render();
+
+  console.log(userEdit);
 } else {
   throw new Error('Root element not found');
 }
+
+//**************************************/
+// Sample Code 14. Views - UserForm()
+// 191. Rendering HTML
+// import { UserForm } from './views/UserForm';
+// import { User } from './models/User';
+
+// const user = User.buildUser({ name: 'NAME', age: 20 });
+
+// const root = document.getElementById('root');
+
+// if (root) {
+//   const userForm = new UserForm(root, user);
+//   userForm.render();
+// } else {
+//   throw new Error('Root element not found');
+// }
 
 //**************************************/
 // Sample Code 13. Collection()
