@@ -36,9 +36,8 @@ Typescript: The Complete Developer's Guide by Stephen Grider
 - 12-advanced-generics
   - features
 - 13-web-framework
-  - web
-    - run server: `json-server -w db.json` or `npm run start:db`
-    - run client: `parcel index.html` or `npm run start:parcel`
+  - web - run server: `json-server -w db.json` or `npm run start:db` - run client: `parcel index.html` or `npm run start:parcel`
+    > I might need to go through one by one once more. It's quite complicated and amazing refactoring and concepts
   - 155-before-refactoring: Before refactoring with composition
 
 # Details
