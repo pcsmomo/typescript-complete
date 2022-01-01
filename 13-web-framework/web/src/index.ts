@@ -1,3 +1,5 @@
+import './index.css';
+
 //**************************************/
 // Sample Code 14. Views - UserForm()
 // 191. Rendering HTML
