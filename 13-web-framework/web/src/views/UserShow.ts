@@ -1,3 +1,4 @@
+import './UserShow.styles.css';
 import { View } from './View';
 import { User, UserProps } from '../models/User';
 
