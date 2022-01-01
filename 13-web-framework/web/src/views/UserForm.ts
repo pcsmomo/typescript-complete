@@ -3,9 +3,9 @@ export class UserForm {
 
   template(): string {
     return `
-      <div>
-        <h1>User Form</h1>
-        <input />
+      <div class="flex flex-col">
+        <h1 class="mb-5 text-2xl font-bold">User Form</h1>
+        <input class="p-2 rounded" />
       </div>
     `;
   }
