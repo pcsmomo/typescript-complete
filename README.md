@@ -144,6 +144,7 @@ export { router };
 
 #### differences between urlencoded and json
 
+- different content type
 - `app.use(express.urlencoded({ extended: true }));`
   - submitting a form with post method ( default content-type = application/ x-www-form-urlencoded )
   - [express.urlencoded() documentation](https://expressjs.com/en/api.html#express.urlencoded)
@@ -151,6 +152,22 @@ export { router };
   - for instance, API server
   - parses JSON and only looks at requests where the Content-Type header matches the type option
   - [express.json() documentation](https://expressjs.com/en/api.html#express.json)
+
+### 218. Why Doesn't Express Play Nicely with TS?
+
+```js
+// index.ts
+// app.use(express.urlencoded({ extended: true }));
+
+// loginRoutes.ts
+router.post('/login', (req: Request, res: Response): void => {
+  const { email, password } = req.body;
+  res.send(email + password);
+});
+```
+
+If we don't use urlencoded(), there won't be 'body' in request,\
+However, TypeScript doesn't know it and warn about this.
 
 </details>
 
