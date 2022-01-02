@@ -162,12 +162,49 @@ export { router };
 // loginRoutes.ts
 router.post('/login', (req: Request, res: Response): void => {
   const { email, password } = req.body;
+  // TypeError: Cannot destructure property 'email' of 'req.body' as it is undefined.
   res.send(email + password);
 });
 ```
 
 If we don't use urlencoded(), there won't be 'body' in request,\
 However, TypeScript doesn't know it and warn about this.
+
+### 219. Issues with Type Definition Files
+
+```html
+<input name="em" /> <input name="pa" type="password" />
+```
+
+```js
+router.post('/login', (req: Request, res: Response): void => {
+  const { email, password } = req.body;
+  res.send(email.toUpperCase());
+  // TypeError: Cannot read properties of undefined (reading 'toUpperCase')
+});
+```
+
+#### To solve this kind of issue
+
+```ts
+// node_modules/@types/express-serve-static-core/index.d.ts
+// body: ReqBody;
+body: { [key: string]: string | undefined };
+
+// loginRoutes.ts
+router.post('/login', (req: Request, res: Response): void => {
+  const { email, password } = req.body;
+  if (email) {
+    res.send(email.toUpperCase());
+  } else {
+    res.send('You must provide an email property');
+  }
+});
+```
+
+> This way can solve the issue, but we never manually modify type definition file.\
+> When reinstall npm package, all changes will be gone\
+> The solution is in the next lecture
 
 </details>
 
