@@ -74,6 +74,47 @@ tsc --init
 npm install --save-dev concurrently nodemon
 ```
 
+```json
+// tsconfig.json
+{
+  "rootDir": "./src" /* Specify the root folder within your source files. */,
+  "outDir": "./build" /* Specify an output folder for all emitted files. */
+}
+```
+
+#### Install Chalk - Personal interest
+
+1. using chalk@^4.1
+
+```sh
+npm install --save chalk@^4.1
+```
+
+2. using chalk@5.0.0
+
+```sh
+npm install --save chalk
+# "chalk": "^5.0.0"
+```
+
+> IMPORTANT: Chalk 5 is ESM. If you want to use Chalk with TypeScript or a build tool, you will probably want to use Chalk 4 for now.\
+> Or set up below
+
+```json
+// package.json
+{
+  "type": "module"
+}
+```
+
+```json
+// tsconfig.json
+{
+  "module": "ES6",
+  "moduleResolution": "Node"
+}
+```
+
 </details>
 
 ## TODO after this course
