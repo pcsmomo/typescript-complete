@@ -119,6 +119,19 @@ npm install --save chalk
 [tsconfig module](https://www.typescriptlang.org/tsconfig#module)
 [tsconfig moduleResolution](https://www.typescriptlang.org/tsconfig#moduleResolution)
 
+### 215. Basic Routes with Express
+
+```sh
+npm install --save express cookie-session
+npm install --save-dev @types/express @types/cookie-session
+```
+
+- [vscode lit-html extension](https://marketplace.visualstudio.com/items?itemName=bierner.lit-html)
+- autocomplete and syntax highlighting in literal strings
+  ```js
+  html` <div></div> `;
+  ```
+
 </details>
 
 ## TODO after this course
