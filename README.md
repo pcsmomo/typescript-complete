@@ -132,6 +132,14 @@ npm install --save-dev @types/express @types/cookie-session
   html` <div></div> `;
   ```
 
+### 216. Using an Express Router
+
+> if the file name is started with a capital letter, that means it exports a class (probably an object?)
+
+```js
+export { router };
+```
+
 </details>
 
 ## TODO after this course
