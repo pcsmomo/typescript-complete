@@ -206,6 +206,20 @@ router.post('/login', (req: Request, res: Response): void => {
 > When reinstall npm package, all changes will be gone\
 > The solution is in the next lecture
 
+### 220. Dealing with Poor Type Defs
+
+Use interface
+
+```ts
+// loginRoutes.ts
+interface RequestWithBody extends Request {
+  body: { [key: string]: string | undefined };
+}
+
+// router.post('/login', (req: Request, res: Response): void => {});
+router.post('/login', (req: RequestWithBody, res: Response): void => {});
+```
+
 </details>
 
 ## TODO after this course
