@@ -39,6 +39,10 @@ Typescript: The Complete Developer's Guide by Stephen Grider
   - web - run server: `json-server -w db.json` or `npm run start:db` - run client: `parcel index.html` or `npm run start:parcel`
     > I might need to go through one by one once more. It's quite complicated and amazing refactoring and concepts
   - 155-before-refactoring: Before refactoring with composition
+- 14-express
+  - server
+- 16-advanced-express
+  - using decorators
 
 # Details
 
@@ -59,6 +63,16 @@ TS with JS Libs
 1. Use the lib normally, adding in basic type annotations where possible
 2. Use a TS adapter library that has helpers for using your lib with TS
 3. Twist your lib to work with TS classes
+
+### 214. Project Setup
+
+```sh
+mkdir server
+cd server
+npm init -y
+tsc --init
+npm install --save-dev concurrently nodemon
+```
 
 </details>
 
