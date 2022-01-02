@@ -140,6 +140,18 @@ npm install --save-dev @types/express @types/cookie-session
 export { router };
 ```
 
+### 217. Parsing Form Bodies
+
+#### differences between urlencoded and json
+
+- `app.use(express.urlencoded({ extended: true }));`
+  - submitting a form with post method ( default content-type = application/ x-www-form-urlencoded )
+  - [express.urlencoded() documentation](https://expressjs.com/en/api.html#express.urlencoded)
+- `app.use(express.json());`
+  - for instance, API server
+  - parses JSON and only looks at requests where the Content-Type header matches the type option
+  - [express.json() documentation](https://expressjs.com/en/api.html#express.json)
+
 </details>
 
 ## TODO after this course
