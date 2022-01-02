@@ -84,10 +84,11 @@ npm install --save-dev concurrently nodemon
 
 #### Install Chalk - Personal interest
 
-1. using chalk@^4.1
+1. \* using chalk@^4
 
 ```sh
-npm install --save chalk@^4.1
+npm install --save chalk@^4
+# "chalk": "^4.1.2"
 ```
 
 2. using chalk@5.0.0
@@ -114,6 +115,9 @@ npm install --save chalk
   "moduleResolution": "Node"
 }
 ```
+
+[tsconfig module](https://www.typescriptlang.org/tsconfig#module)
+[tsconfig moduleResolution](https://www.typescriptlang.org/tsconfig#moduleResolution)
 
 </details>
 
