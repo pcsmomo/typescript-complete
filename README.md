@@ -240,6 +240,14 @@ router.post('/login', (req: RequestWithBody, res: Response): void => {});
 tsc --init
 ```
 
+```json
+// tsconfig.json - to use decorator
+{
+  "experimentalDecorators": true /* Enable experimental support for TC39 stage 2 draft decorators. */,
+  "emitDecoratorMetadata": true /* Emit design-type metadata for decorated declarations in source files. */
+}
+```
+
 </details>
 
 ## TODO after this course
