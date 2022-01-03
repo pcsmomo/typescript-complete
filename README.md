@@ -220,6 +220,18 @@ interface RequestWithBody extends Request {
 router.post('/login', (req: RequestWithBody, res: Response): void => {});
 ```
 
+### 225. A Closer Integration
+
+- Changing express to a class
+- Massaging TS and Express to work better together will take a lot of time + effort
+- Must get one or two outcomes
+
+  1. Get better type safety (help TS do a better job of catching errors)
+  2. Significantly enhance the developer experience
+
+- Easy: Stick a bunch of express code into classes
+- Hard: Stick a bunch of express code into classes + **Use some advanced features of TS**
+
 </details>
 
 ## TODO after this course
