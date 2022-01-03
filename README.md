@@ -232,6 +232,14 @@ router.post('/login', (req: RequestWithBody, res: Response): void => {});
 - Easy: Stick a bunch of express code into classes
 - Hard: Stick a bunch of express code into classes + **Use some advanced features of TS**
 
+## Section 15. Decorators
+
+### 228. Decorators in Typescript
+
+```sh
+tsc --init
+```
+
 </details>
 
 ## TODO after this course
