@@ -5,13 +5,13 @@ class BoatBasic {
     return `This boats color is ${this.color}`;
   }
 
-  @testDecorator
+  @testDecoratorBasic
   pilot(): void {
     console.log('swish');
   }
 }
 
-function testDecorator(target: any, key: string): void {
+function testDecoratorBasic(target: any, key: string): void {
   console.log('Target:', target);
   console.log('Key:', key);
 }

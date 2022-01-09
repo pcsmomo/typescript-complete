@@ -1,4 +1,5 @@
 class BoatFactory {
+  @testDecorator
   color: string = 'red';
 
   get formattedColor(): string {
@@ -10,6 +11,12 @@ class BoatFactory {
     throw new Error();
     console.log('swish');
   }
+}
+
+function testDecorator(target: any, key: string) {
+  console.log(target);
+  console.log(key);
+  console.log(target.color); // it is never available as the decorator is executed before instanciated
 }
 
 // Decorator Factory
@@ -26,4 +33,4 @@ function logErrorFactory(errorMessage: string) {
     };
   };
 }
-new BoatFactory().pilot();
+// new BoatFactory().pilot();
