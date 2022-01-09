@@ -295,6 +295,12 @@ Object.defineProperty(car, 'make', { writable: false });
 // now I cannot change the value of 'make' property
 ```
 
+### 234. More on Decorators
+
+- classDecorator
+- parameterDecorator
+- But these are for quite advanced use cases
+
 </details>
 
 ## TODO after this course
