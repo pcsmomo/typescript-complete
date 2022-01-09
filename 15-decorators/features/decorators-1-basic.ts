@@ -1,4 +1,4 @@
-class Boat {
+class BoatBasic {
   color: string = 'red';
 
   get formattedColor(): string {
@@ -15,3 +15,5 @@ function testDecorator(target: any, key: string): void {
   console.log('Target:', target);
   console.log('Key:', key);
 }
+
+// testDecorator(BoatBasic.prototype, 'pilot');

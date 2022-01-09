@@ -248,6 +248,29 @@ tsc --init
 }
 ```
 
+### 229. Details on Decorators
+
+```sh
+ts-node decorators.ts
+# Target: {}
+# Key: pilot
+```
+
+Target looks emptty on the terminal, but it has method when I print it out, `console.log('Target:', target.formattedColor);`
+
+```js
+// to simplify the compiled code
+var __decorate = function (decorators, target, key, desc) {
+  var desc = Object.getOwnPropertyDescriptor(target, key);
+
+  for (var decorator of decorators) {
+    decorator(target, key, desc);
+  }
+};
+// ⏸⏸⏸ simply this is it
+testDecorator(Boat.prototype, 'pilot');
+```
+
 </details>
 
 ## TODO after this course
