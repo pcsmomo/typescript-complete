@@ -42,7 +42,9 @@ Typescript: The Complete Developer's Guide by Stephen Grider
 - 14-express
   - server
 - 16-advanced-express
-  - using decorators
+  - server
+    - it'd be quite intense
+    - using decorators
 
 # Details
 
@@ -300,6 +302,12 @@ Object.defineProperty(car, 'make', { writable: false });
 - classDecorator
 - parameterDecorator
 - But these are for quite advanced use cases
+
+## Section 16. Advanced Express and TS Integration
+
+### 235. A Quick Disclaimer
+
+> Warning: pretty tough content starts here
 
 </details>
 
