@@ -271,6 +271,30 @@ var __decorate = function (decorators, target, key, desc) {
 testDecorator(Boat.prototype, 'pilot');
 ```
 
+### 230. Property Descriptors
+
+[Object.getOwnPropertyDescriptor() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor)
+
+- Property Descriptor for Methods
+  - writable
+  - enumerable
+  - value
+  - configurable
+
+```js
+// Example
+const car = { make: 'hyundai', year: 2000 };
+Object.getOwnPropertyDescriptor(car, 'make');
+// {
+//   configurable: true,
+//   enumerable: true,
+//   value: 'hyundai',
+//   writable: true,
+// }
+Object.defineProperty(car, 'make', { writable: false });
+// now I cannot change the value of 'make' property
+```
+
 </details>
 
 ## TODO after this course
