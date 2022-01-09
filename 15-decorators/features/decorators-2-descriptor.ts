@@ -5,14 +5,18 @@ class BoatDesc {
     return `This boats color is ${this.color}`;
   }
 
-  @logError
+  @logErrorDesc
   pilot(): void {
     throw new Error();
     console.log('swish');
   }
 }
 
-function logError(target: any, key: string, desc: PropertyDescriptor): void {
+function logErrorDesc(
+  target: any,
+  key: string,
+  desc: PropertyDescriptor
+): void {
   const method = desc.value;
 
   desc.value = function () {
