@@ -337,6 +337,29 @@ The same way as Ts.ED handles.
   - Read and written using the reflect-metadata package
   - [npm reflect-metadata](https://www.npmjs.com/package/reflect-metadata)
 
+### 239. Basics of Metadata
+
+[reflect-metadata github](https://github.com/rbuckton/reflect-metadata)
+
+```sh
+# /features
+npm init -y
+npm install --save reflect-metadata
+```
+
+> metadata is a kind of hidden data not to be shown to public
+
+```ts
+import 'reflect-metadata';
+const plane = { color: 'red' };
+Reflect.defineMetadata('note', 'hi there', plane);
+console.log(plane);
+// { color: 'red' }
+const note = Reflect.getMetadata('note', plane);
+console.log(note);
+// hi there
+```
+
 </details>
 
 ## TODO after this course
