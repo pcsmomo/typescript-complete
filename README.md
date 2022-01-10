@@ -360,6 +360,25 @@ console.log(note);
 // hi there
 ```
 
+### 240. Practical Metadata
+
+```js
+// This won't work
+function printMetadata(target: typeof Plane) {
+  for (let key in target.prototype) {
+    const secret = Reflect.getMetadata('secret', target.prototype, key);
+    console.log(secret);
+  }
+}
+⬇️⬇️⬇️
+function printMetadata(target: typeof Plane) {
+  Object.getOwnPropertyNames(Plane.prototype).forEach(key => {
+    const secret = Reflect.getMetadata('secret', target.prototype, key);
+    console.log(secret);
+  })
+}
+```
+
 </details>
 
 ## TODO after this course
