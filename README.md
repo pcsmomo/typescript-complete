@@ -318,6 +318,25 @@ Goal: Make our app to work similar to Ts.ED
 
 > We can make @decorators to have functionalities as well as to handle middlewares
 
+### 238. Solution Overview
+
+The same way as Ts.ED handles.
+
+1. Node executes our code
+2. Class definition read in - decorators are executed
+3. Decorators associate route configuration info with the method by using _metadata_
+4. All method decorators run
+5. Class decorator of '@controller' runs last
+6. Class decorator reads metadata from each method, adds complete route definitions to router
+
+- Metadata
+  - Proposed feature to be added to Javascript (and thus, TS)
+  - Snippets of info that can be tied to a method, property, or class definition
+  - Can be used for super custom stuff - (which we are doing now)
+  - Typescript will (optionally) provide type information as metadata
+  - Read and written using the reflect-metadata package
+  - [npm reflect-metadata](https://www.npmjs.com/package/reflect-metadata)
+
 </details>
 
 ## TODO after this course
