@@ -309,6 +309,15 @@ Object.defineProperty(car, 'make', { writable: false });
 
 > Warning: pretty tough content starts here
 
+### 236. Project Overview
+
+- [npm ts-express-decorators](https://www.npmjs.com/package/ts-express-decorators)
+- Ts.ED is a framework on top of Express to write your application with TypeScript (or in ES6). It provides a lot of decorators to write your code.
+
+Goal: Make our app to work similar to Ts.ED
+
+> We can make @decorators to have functionalities as well as to handle middlewares
+
 </details>
 
 ## TODO after this course
