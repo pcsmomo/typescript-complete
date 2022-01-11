@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+import { controller } from './decorators/controller';
 import { get } from './decorators/routes';
 
 @controller('/')
