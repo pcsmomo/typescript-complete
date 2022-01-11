@@ -379,6 +379,20 @@ function printMetadata(target: typeof Plane) {
 }
 ```
 
+### 242. The 'Get' Decorator
+
+```sh
+npm install --save reflect-metadata
+```
+
+```json
+// tsconfig.json
+{
+  "experimentalDecorators": true /* Enable experimental support for TC39 stage 2 draft decorators. */,
+  "emitDecoratorMetadata": true /* Emit design-type metadata for decorated declarations in source files. */
+}
+```
+
 </details>
 
 ## TODO after this course
