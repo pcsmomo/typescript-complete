@@ -451,6 +451,10 @@ const method = Reflect.getMetadata('method', target.prototype, key) as Methods;
 export function use(middleware: RequestHandler) {}
 ```
 
+### 253. Testing Automated Validation
+
+Now that we have bodyValidator so we don't necessarily need 'RequestWithBody' but still we can have it if we want.
+
 </details>
 
 ## TODO after this course

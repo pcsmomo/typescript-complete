@@ -13,7 +13,7 @@ function bodyValidators(keys: string): RequestHandler {
 
     for (let key of keys) {
       if (key in req.body === false) {
-        res.status(422).send('Invalid request');
+        res.status(422).send(`Missing property ${key}`);
         return;
       }
     }

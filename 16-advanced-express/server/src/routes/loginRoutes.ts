@@ -18,19 +18,6 @@ function requireAuth(req: Request, res: Response, next: NextFunction): void {
 
 const router = Router();
 
-router.post('/login', (req: RequestWithBody, res: Response): void => {
-  const { email, password } = req.body;
-
-  if (email && password && email === 'hi@hi.com' && password === 'password') {
-    // mark this person as logged in
-    req.session = { loggedIn: true };
-    res.redirect('/');
-    // redirect them to the root route
-  } else {
-    res.send('Invalid email or password');
-  }
-});
-
 // we know it's an inappropreate location
 router.get('/', (req: Request, res: Response) => {
   if (req.session && req.session.loggedIn) {
