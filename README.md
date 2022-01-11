@@ -420,6 +420,31 @@ export const del = routeBinder('del');
 export const patch = routeBinder('patch');
 ```
 
+### 247. Closed Method Sets with Enums
+
+```ts
+export enum Methods {
+  delete = 'delete',
+}
+export const del = routeBinder(Methods.delete);
+// ironic
+// 1. http method should be 'delete', not 'del'
+// 2. but 'delete' is not allowed as a variable declaration name. ts(1389)
+```
+
+```ts
+// Type declaration
+const method: Methods = Reflect.getMetadata('method', target.prototype, key);
+// Type assertion
+const method = Reflect.getMetadata('method', target.prototype, key) as Methods;
+// Both works without an error in this case,
+// but check out this article below
+```
+
+[TypeScript: Type Declarations vs Type Assertions](https://imfaber.me/typescript-type-declarations-vs-type-assertions/)
+
+> The author, Fabrizio Meinero said, "I hope it is now clear that you should always prefer type declarations because they offer additional safety checks, unless you have a good reason to think you know better than TypeScript."
+
 </details>
 
 ## TODO after this course
