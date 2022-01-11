@@ -455,6 +455,14 @@ export function use(middleware: RequestHandler) {}
 
 Now that we have bodyValidator so we don't necessarily need 'RequestWithBody' but still we can have it if we want.
 
+### 255. Using Property Descriptors for Type Checking
+
+```js
+interface RouterHandlerDescriptor extends PropertyDescriptor {
+  value?: RequestHandler;
+}
+```
+
 </details>
 
 ## TODO after this course

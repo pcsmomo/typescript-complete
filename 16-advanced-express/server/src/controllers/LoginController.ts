@@ -1,7 +1,14 @@
 import { Request, Response } from 'express';
 import { get, post, controller, bodyValidator } from './decorators';
+
 @controller('/auth')
 class LoginController {
+  // To check if it is a proper RequestHandler
+  // @get('/')
+  // add(a: number, b: number): number {
+  //   return a + b;
+  // }
+
   @get('/login')
   getLogin(req: Request, res: Response): void {
     res.send(`
