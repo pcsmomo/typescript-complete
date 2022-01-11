@@ -393,6 +393,11 @@ npm install --save reflect-metadata
 }
 ```
 
+### 245. A Few Fixups
+
+1. gather everything into /decorator/index.ts
+2. use router with the singleton pattern
+
 </details>
 
 ## TODO after this course
