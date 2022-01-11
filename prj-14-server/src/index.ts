@@ -1,16 +1,19 @@
 import express, { Request, Response } from 'express';
-import bodyParser from 'body-parser';
+import chalk from 'chalk';
 import cookieSession from 'cookie-session';
-import { AppRouter } from './AppRouter';
-import './controllers/LoginController';
-import './controllers/RootController';
+
+import { router } from './routes/loginRoutes';
 
 const app = express();
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cookieSession({ keys: ['laskdjf'] }));
-app.use(AppRouter.getInstance());
+app.use(express.urlencoded({ extended: true }));
+app.use(
+  cookieSession({
+    keys: ['laskdjf'],
+  })
+);
+app.use(router);
 
 app.listen(3000, () => {
-  console.log('Listening on port 3000');
+  console.log(chalk.italic('Listening on port 3000'));
 });
