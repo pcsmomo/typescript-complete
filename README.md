@@ -445,6 +445,12 @@ const method = Reflect.getMetadata('method', target.prototype, key) as Methods;
 
 > The author, Fabrizio Meinero said, "I hope it is now clear that you should always prefer type declarations because they offer additional safety checks, unless you have a good reason to think you know better than TypeScript."
 
+### 249. The 'Use' Decorator
+
+```js
+export function use(middleware: RequestHandler) {}
+```
+
 </details>
 
 ## TODO after this course
