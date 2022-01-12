@@ -75,6 +75,14 @@ Typescript: The Complete Developer's Guide by Stephen Grider
 
 > We will follow some from the documentations but some are not.
 
+```sh
+npx create-react-app rrts --template typescript
+# You are running `create-react-app` 4.0.3, which is behind the latest release (5.0.0).
+# We no longer support global installation of Create React App.
+npx clear-npx-cache
+npx create-react-app rrts --template typescript
+```
+
 </details>
 
 ## TODO after this course
