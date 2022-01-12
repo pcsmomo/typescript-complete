@@ -86,6 +86,14 @@ npx create-react-app rrts --template typescript
 > The lecture is going with class component, but I will go functional component\
 > It might be challenging.. or not
 
+### 261. Interfaces with Props
+
+FC : FunctionComponent
+
+```tsx
+const App: React.FC<AppProps> = (props) => {};
+```
+
 </details>
 
 ## TODO after this course
