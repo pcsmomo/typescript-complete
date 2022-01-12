@@ -13,6 +13,11 @@ export interface FetchTodosAction {
   payload: Todo[];
 }
 
+export interface DeleteTodoAction {
+  type: ActionTypes.deleteTodo;
+  payload: number;
+}
+
 const url = 'https://jsonplaceholder.typicode.com/todos';
 
 // Because we are using thunk, it should return a function
@@ -24,5 +29,12 @@ export const fetchTodos = () => {
       type: ActionTypes.fetchTodos,
       payload: response.data,
     });
+  };
+};
+
+export const deleteTodo = (id: number): DeleteTodoAction => {
+  return {
+    type: ActionTypes.deleteTodo,
+    payload: id,
   };
 };
