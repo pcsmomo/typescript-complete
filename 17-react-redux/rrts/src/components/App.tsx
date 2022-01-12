@@ -6,10 +6,15 @@ import { StoreState } from '../reducers';
 export const App: React.FC = (): JSX.Element => {
   const dispatch = useDispatch();
 
+  // const [fetching, setFetching] = useState(false);
+  // to implement fetching status
+  // It'd better add fetching success/failure(error) actions
+
   const todos = useSelector<StoreState, Todo[]>((state) => state.todos);
 
   const onButtonClick = (): void => {
     dispatch(fetchTodos());
+    // setFetching(true);
   };
 
   const onTodoClick = (id: number): void => {
