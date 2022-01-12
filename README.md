@@ -146,6 +146,12 @@ const App: React.FC<AppProps> = (props): JSX.Element => {
 };
 ```
 
+### 265. Redux Setup
+
+```sh
+npm install --save redux react-redux axios redux-thunk
+```
+
 </details>
 
 ## TODO after this course
