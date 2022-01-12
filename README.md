@@ -170,6 +170,25 @@ export const fetchTodos = () => {
 };
 ```
 
+### 278. Again, Type Definition Files
+
+```tsx
+interface AppProps {
+  todos: Todo[];
+  fetchTodos: typeof fetchTodos;
+  deleteTodo: typeof deleteTodo;
+}
+⬇️⬇️⬇️
+interface AppProps {
+  todos: Todo[];
+  fetchTodos: Function;
+  deleteTodo: typeof deleteTodo;
+}
+```
+
+> That that time, there was no way to indicate redux-thunk for fetchTodos\
+> Not sure now though 🤷
+
 </details>
 
 ## TODO after this course
