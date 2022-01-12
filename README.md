@@ -83,6 +83,9 @@ npx clear-npx-cache
 npx create-react-app rrts --template typescript
 ```
 
+> The lecture is going with class component, but I will go functional component\
+> It might be challenging.. or not
+
 </details>
 
 ## TODO after this course
