@@ -136,6 +136,16 @@ class _App extends React.Component<AppProps, AppState> {
 
 > When using class component we need to decide which way we will go.
 
+### 264. Functional Components
+
+> for FunctionComponent, JSX.Element return type can be added
+
+```tsx
+const App: React.FC<AppProps> = (props): JSX.Element => {
+  return <div>{props.color}</div>;
+};
+```
+
 </details>
 
 ## TODO after this course

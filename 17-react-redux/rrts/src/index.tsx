@@ -5,7 +5,7 @@ interface AppProps {
   color?: string;
 }
 
-const App: React.FC<AppProps> = (props) => {
+const App: React.FC<AppProps> = (props): JSX.Element => {
   const [counter, setCounter] = useState(0);
 
   const onIncrement = (): void => {
