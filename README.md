@@ -152,6 +152,24 @@ const App: React.FC<AppProps> = (props): JSX.Element => {
 npm install --save redux react-redux axios redux-thunk
 ```
 
+### 266. Action Creators with Typescript
+
+[jsonplaceholder - sample data API](https://jsonplaceholder.typicode.com/todos)
+
+```ts
+// Because we are using thunk, it should return a function
+export const fetchTodos = () => {
+  return async (dispatch: Dispatch) => {
+    const response = await axios.get(url);
+
+    dispatch({
+      type: 'FETCH_TODOS',
+      payload: response.data,
+    });
+  };
+};
+```
+
 </details>
 
 ## TODO after this course
