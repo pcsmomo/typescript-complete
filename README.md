@@ -94,6 +94,48 @@ FC : FunctionComponent
 const App: React.FC<AppProps> = (props) => {};
 ```
 
+### 263. Confusing Component State!
+
+```tsx
+// react/index.d.ts
+// Base component for plain JS classes
+interface Component<P = {}, S = {}, SS = any>
+  extends ComponentLifecycle<P, S, SS> {}
+```
+
+```tsx
+// index.tsx
+// Class Component Example
+
+// Way 1. Using constructor - need to provide State Type
+interface AppProps {
+  todos: Todo[];
+}
+
+interface AppState {
+  fetching: boolean;
+}
+
+class _App extends React.Component<AppProps, AppState> {
+  constructor(props: AppProps) {
+    super(props);
+
+    this.state = { fetching: false };
+  }
+}
+
+// Way 2. Not using constructor
+interface AppProps {
+  todos: Todo[];
+}
+
+class _App extends React.Component<AppProps, AppState> {
+  state = { fetching: false };
+}
+```
+
+> When using class component we need to decide which way we will go.
+
 </details>
 
 ## TODO after this course
